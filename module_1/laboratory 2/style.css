@@ -1,0 +1,95 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-bottom: 1px solid #212429; /* Asegúrate de que el border-bottom esté correctamente aplicado */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-icon img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu_options {
+    color: #212429;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+h1 {
+    padding: 30px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.producto {
+    width: 200px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.product_info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #212429;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #212429;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Asegura que los íconos estén centrados verticalmente */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.footer-content img {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 5px; /* Aumenta el padding para que la imagen no se corte */
+    width: 30px;
+    height: 30px;
+    object-fit: contain; /* Mantiene las proporciones de la imagen dentro del círculo */
+    display: inline-block;
+}
