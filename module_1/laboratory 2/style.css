@@ -77,25 +77,24 @@ footer {
     align-items: center; 
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Aumentamos el espacio lateral */
+    padding: 0 3px;
     font-size: 16px;
-    
 }
 
 .footer-section {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .footer-content img {
     background-color: #ffffff;
-    border: 5px solid #ffffff; /* Asegura que el borde sea visible */
-    border-radius: 50%; /* Esto mantiene el estilo circular */
+    border: 5px;
+    border-radius: 50%;
     padding: 8px;
     width: 40px;
     height: 40px;
-    object-fit: cover; /* Cambia a 'cover' para que se ajuste mejor sin distorsionarse */
+    object-fit: contain;
     overflow: visible;
     display: inline-block;
 }
