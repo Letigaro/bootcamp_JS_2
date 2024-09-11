@@ -1,0 +1,148 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    padding-top: 128px; 
+}
+
+header {
+    background-color: #ffffff;
+    position: fixed; /* Hace que la barra quede fija */
+    top: 0; /* Fija la barra en la parte superior de la página */
+    width: 100%; /* Asegura que la barra ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que la barra quede por encima del resto del contenido */
+    background-color: #ffffff; /* Fondo de la barra de navegación para evitar que se superponga con el contenido */
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: #212429 1px solid;
+    
+
+}
+
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.menu_options {
+    color: #212429;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 16px;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+.menu_options:hover{
+    font-weight: bold;
+}
+
+h1 {
+    padding: 32px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.productos {
+    text-align: center;
+}
+
+.producto {
+    width: 300px;
+    margin: 16px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.product_info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #212429;
+}
+
+.product_price{
+    font-weight: bold;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #212429;
+    color: #ffffff;
+    padding: 32px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3px;
+    font-size: 16px;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-content img {
+    background-color: #ffffff;
+    border: 5px;
+    border-radius: 50%;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    overflow: visible;
+    display: inline-block;
+}
+
+@media (max-width: 920px) {
+    .menu-icon{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .menu_options {
+        display: none;
+    }
+    .user-icon,
+    .heart-icon, 
+    .shopping-cart-icon{
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0 16px; 
+    }
+
+
+    .footer-section {
+        margin-bottom: 16px;
+        border-bottom: #ffffff 1px solid;
+        padding-bottom: 16px;
+        width: 100%;
+    }
+}
