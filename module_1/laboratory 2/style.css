@@ -3,10 +3,17 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    padding-top: 128px; 
 }
 
 header {
     background-color: #ffffff;
+    position: fixed; /* Hace que la barra quede fija */
+    top: 0; /* Fija la barra en la parte superior de la página */
+    width: 100%; /* Asegura que la barra ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que la barra quede por encima del resto del contenido */
+    background-color: #ffffff; /* Fondo de la barra de navegación para evitar que se superponga con el contenido */
+
 }
 
 .navbar {
@@ -16,12 +23,16 @@ header {
     padding: 32px;
     max-width: 1200px;
     margin: 0 auto;
+    border-bottom: #212429 1px solid;
+    
+
 }
 
 .menu-icon img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+    text-align: left;
 }
 
 .menu_options {
@@ -30,6 +41,7 @@ header {
     text-align: center;
     padding: 0 16px;
     transition: color 0.3s ease;
+    text-transform: uppercase;
 }
 .menu_options:hover{
     font-weight: bold;
@@ -58,6 +70,10 @@ h1 {
     justify-content: space-between;
     font-size: 14px;
     color: #212429;
+}
+
+.product_price{
+    font-weight: bold;
 }
 
 .producto img {
